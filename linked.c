@@ -6,7 +6,7 @@ boolean isEmpty(address P){
 
 address createNode (infotype info){
     address P = (address) malloc(sizeof(ElmtList));
-    if (P == Nil) return Nil;
+    if (!isEmpty(P)) return Nil;
     P->info = info;
     P->next = Nil;
     return P;
